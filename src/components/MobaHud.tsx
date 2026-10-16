@@ -103,7 +103,7 @@ export const MobaHud: React.FC<MobaHudProps> = ({
     if (!hud.roundStats) return;
     const s = hud.roundStats;
     const rxText = s.retriReactionMs ? `${s.retriReactionMs}ms` : 'Gagal Retri';
-    const text = `⚔️ SENTINEL LORD // 3D MOBA RETRI TEST\nRank Mekanik: [${s.grade}] ${s.titleIndo}\n⚡ Refleks Retri: ${rxText}\n🔥 Dodge AoE: ${s.dodgedCount}x | APM: ${s.apm}\nCoba tes mekanik Retri lu!`;
+    const text = `⚔️ SENTINEL LORD // 3D MOBA RETRI TEST\nRank Mekanik: [${s.grade}] ${s.titleIndo}\n⚡ Refleks Retri: ${rxText}\n🔥 Dodge AoE: ${s.dodgedCount}x | APM: ${s.apm}\nCoba tes mekanik Retri lu di: https://habiibullahm.github.io/moba-retri-arena-3d/`;
     navigator.clipboard?.writeText(text);
     setCopiedShare(true);
     window.setTimeout(() => setCopiedShare(false), 2000);
